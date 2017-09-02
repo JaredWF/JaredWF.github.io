@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jared Failor Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/landingStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-full row" id="page-header">
+      <div class="col-xs-12 col-md-4">
+        <a href="index.html">
+          Jared Failor
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <span class="contact-info">
+          <i class="fa fa-envelope" aria-hidden="true"></i> jfailor2@gmail.com
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="contact-info">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <a href="https://www.linkedin.com/in/jared-failor/">
+            https://www.linkedin.com/in/jared-failor/
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="container-full" id="project-container">
+      <div class="row">
+        <div class="col-xs-12 project-header"><h1>Cold One Cracker</h1></div>
+        <div class="col-xs-12 project-header"><h3>C++ • Arduino • Python • Flask • Microsoft Face API</h3></div>
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 project-description">
+          <br>
+          Built for Captial One's Carbon Hackathon, the Cold One Cracker was an overall finalist and winner of crowd favorite. The can opener's suite of features includes:<br><br>
+          • Facial recognition for authorization<br>
+          • Daily drink counter per individual<br>
+          • Simple user interface<br>
+          • Dual servo controlled opener<br>
+          • Two seven segment displays for drink count<br>
+          • Robust structure made of cardboard, pencils, duct tape, and zip ties <br><br>
+          <img class="content-image-vert center-block" src="img/ColdOneBooth.jpg">
+          <br><br>
+          How the Cold One Cracker works is you first insert your beverage. It then scans your face and checks against our face database to see if you're authorized. If you are, it opens the can and updates your drink count and shows it on the 7 segment displays. Our teaser trailer is below.
+          <br><br>
+          <p style="text-align:center">*** WARNING: LOUD VIDEO ***</p>
+          <div class="auto-resizable-iframe">
+            <div>
+              <iframe frameborder="0" allowfullscreen="" src="https://www.youtube.com/embed/ms2f4eqQSP8"></iframe>
+            </div>
+          </div>
+          <br>
+          Being the only person in the group with hardware experience, I was in charge of the cracking mechanism, seven segment displays, and communication between the Arduino and laptop. Besides the displays and servos, the hardware components at the hackathon were pretty lacking. Thankfully I had my box of components with me so we could drive the displays with some shift registers and provide more power to the servos using an external battery pack.
+          <br><br>
+          <img class="content-image-vert center-block" src="img/ColdOneHardware.jpg">
+          <br>
+          In this look "under the hood" you can see how we had to use pencils to stop the servos from turning under load. Given we only had access to boxes for structural materials, we had to use empty wire spools to help the servos bridge the gap where the can is inserted. In the back you can see the data wires running up to the displays which are integrated into the hood.
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
