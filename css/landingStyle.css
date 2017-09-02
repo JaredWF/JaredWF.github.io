@@ -1,0 +1,79 @@
+body {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+}
+
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+#page-header {
+  background-color: #E6E7E7;
+  font-size: 4em;
+  padding: 0.5em;
+  padding-left: 1em;
+}
+
+.contact-info {
+  padding-top: 1em;
+  font-size: 0.5em;
+  white-space:nowrap;
+}
+
+a {
+  color: black;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+#about-me-container {
+  background-color: #637778;
+}
+
+#projects-container {
+  background-color: #ABB1B2;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+#projects-container>.row {
+  padding: 1em;
+}
+
+.about-me-text {
+    margin-top: 0.5em;
+    color: white;
+    font-size: 2em;
+}
+
+.thumb {
+    position:relative;
+    overflow:hidden;
+}
+
+.card-img-top {
+  max-width: 100%;
+}
+
+.card-text {
+    position:absolute;
+    top:0;
+    margin-left: auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    color: black;
+    z-index:2;
+    font-weight: bold;
+    font-size: 2em;
+}
