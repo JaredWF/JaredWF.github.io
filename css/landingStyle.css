@@ -49,6 +49,11 @@ a:active {
   padding: 1em;
 }
 
+#project-container {
+    background-color: #637778;
+    color: white;
+}
+
 .about-me-text {
     margin-top: 0.5em;
     color: white;
@@ -76,4 +81,21 @@ a:active {
     z-index:2;
     font-weight: bold;
     font-size: 2em;
+}
+
+.content-image-vert {
+  max-width: 50%;
+}
+
+.content-image-horiz {
+  max-width: 90%;
+}
+
+.project-description {
+  font-size: 2em;
+}
+
+.project-header {
+  color: #000;
+  text-align: center;
 }
