@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jared Failor Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/landingStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-full row" id="page-header">
+      <div class="col-xs-12 col-md-4 contact-info">
+        <a class="name" href="index.html">
+          Jared Failor
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-8 lowered">
+        <span class="contact-info">
+          <i class="fa fa-envelope" aria-hidden="true"></i> jfailor2@gmail.com
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="contact-info">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <a href="https://www.linkedin.com/in/jared-failor/">
+            https://www.linkedin.com/in/jared-failor/
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="container-full" id="project-container">
+      <div class="row">
+        <div class="col-xs-12 project-header"><h1>Smart Home</h1></div>
+        <div class="col-xs-12 project-header"><h3>Python • C++ • AWS</h3></div>
+        <div class="col-xl-6 col-xl-offset-3 col-md-8 col-md-offset-2 project-description">
+          This is an ongoing project of making smart home devices that work nicely with existing, old home infrastructure. Device interaction is done through a mobile friendly web interface or Google Home voice commands. Current custom devices include:
+          <br>
+          <br>• T.V. control (Power, input switching, volume, etc.)
+          <br>• LED strip control (dim, change colors, power on/off)
+          <br><br>
+          In development devices include:
+          <br>
+          <br>• Door sensors (to turn off living room lights while we sleep)
+          <br>• Motorized deadbolt control
+          <br><br>
+          Commands are sent through the API Gateway and processed in an AWS Lambda Function. The Lambda function then forwards the command to the appropriate house hub. The hub is a wifi connected Particle Photon board and acts as a bridge between the internet and the rest of the devices. The Photon then relays messages to much cheaper Arduino Nano powered devices over a 2.4GHz Nordic Radio. The flow of data is shown in the diagram below.
+          <br><br>
+          <img class="content-image-vert center-block" src="img/SmartHomeComm.png">
+          <br>
+          The T.V. controller is a box that sticks to the back of T.V.s and has an IR transmitter pointed directly in to the T.V.'s receiver. Control codes are programmed using the existing remote. The controller also keeps track of which input the T.V. is on so switching inputs can be aliased to more human friendly names, ie. "switch the big T.V. to the Xbox One". Volume control is done in larger increments so you don't have to say the same command multiple times. Further improvemnt could be to capture how much to adjust the volume in the voice command.
+          <br><br>
+          <img class="content-image-vert center-block" src="img/SmartHomeIcon.jpg">
+          <br>
+          The light controller powers the analog SMD 3528 RGB LED strips in our living room. The LEDs are driven by applying PWM to three MOSFETs (one for each color). Because the power supplies provided are too weak for the strips, we're utilizing old Xbox 360 power bricks for our 12V power. Interestingly, despite being able to connect end to end, the LED strips lost a ton of brightness after just one 5m segment. To combat this, we connect the start of each strip to the MOSFETs. Eventually, a 5V regulator should be put in place so that the controller doesn't need the Arduino USB connector and 12V power.
+          <br><br>
+          <img class="content-image-vert center-block" src="img/LightController.jpg">
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
