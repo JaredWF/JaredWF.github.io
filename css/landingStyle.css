@@ -101,6 +101,7 @@ a:active {
     z-index:2;
     font-weight: bold;
     font-size: 2em;
+    text-align: center;
 }
 
 .content-image-vert {
