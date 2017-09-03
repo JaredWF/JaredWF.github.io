@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jared Failor Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/landingStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="user-scalable=0;"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <div class="container-full row" id="page-header">
+      <div class="col-xs-12 col-md-4 contact-info">
+        <a class="name" href="index.html">
+          Jared Failor
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-8 lowered">
+        <span class="contact-info">
+          <i class="fa fa-envelope" aria-hidden="true"></i> jfailor2@gmail.com
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="contact-info">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <a href="https://www.linkedin.com/in/jared-failor/">
+            https://www.linkedin.com/in/jared-failor/
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="container-full" id="project-container">
+      <div class="row">
+        <div class="col-xs-12 project-header"><h1>Clevo Keyboard Controller</h1></div>
+        <div class="col-xs-12 project-header"><h3>C# • Windows Forms</h3></div>
+        <div class="col-xl-6 col-xl-offset-3 col-md-8 col-md-offset-2 project-description">
+          Not being satisfied with the keyboard customization that came with my Sager (rebranded Clevo) laptop when I bought it, I decided to recreate it and add the desired features. The final program added the following options to the existing collection of effects:
+          <br><br>
+          • Adaptive screen color - matches keyboard color to majority color on the screen <br>
+          • Temperature ranges - changes colors when CPU and GPU temperatures fall within defined ranges <br>
+          • Keypress speed - regions of the keyboard become "hot" with increased typing speed <br>
+          • Audio feedback - modulates brightness and switches colors based on the system audio <br>
+          • Custom cycles - fades between specific colors with defined time intervals <br>
+          • Heartbeat - flashes like a heartbeat with increased CPU or GPU load <br>
+          • Alienware FX - spoofs the dll for Alienware FX supported games to call our controller <br>
+          <br><br>
+          <img class="content-image-horiz center-block" src="img/KeyboardUI.png">
+          <br>
+          I started development the summer after my junior year of high school. I noticed that the stock program was still using the default Windows Forms icon, so I plugged it in to ILSpy to check out the source. Sure enough, ILSpy was able to provide detailed C# code. After digging through it, I identified the function that set the colors and went from there. Still being pretty inexperienced, the initial version of the software had a very barebones gui and its main feature was temperature controlled colors.
+          <br><br>
+          After I was confident in its functionality, I posted the initial version on some laptop forms to get feedback and it was very well received. The forum users provided tests on other Clevo machines with the same keyboard but different CPUs and GPUs. The program drummed up enough popularity that I decided to turn it in to a total replacement of the original software. It also caught the attention of another, more experienced developer who I partnered up with to continue work on the project.
+          <br><br>
+          <img class="content-image-horiz center-block" src="img/KeyboardUI2.png">
+          <br>
+          One challenge that arose during development was that my partner was located in Greece so there was always a large time delay in our communication. He proved to be very helpful in overhauling the UI, setting up a nice foundation to extend for each new effect. In addition to the new effects, our program allows for multiple profiles and program triggers for switching to each profile. Ultimately, the program was downloaded around 1000 times and was considered for distribution with Clevo laptops for a couple resellers.
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
