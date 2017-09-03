@@ -9,18 +9,27 @@ body {
 
 #page-header {
   background-color: #E6E7E7;
-  font-size: 4em;
   padding: 0.5em;
 }
 
 .contact-info {
+  color: #4DBC8C;
   padding-top: 1em;
-  font-size: 0.3em;
   white-space: nowrap;
 }
 
-a {
-  color: black;
+.name {
+  font-size: 4em;
+}
+
+.lowered {
+  line-height: 4em;
+  padding-top: 2em;
+  font-size: 1.25em;
+}
+
+.contact-info>a {
+  color: #2EA974;
 }
 a:link {
     text-decoration: none;
@@ -30,19 +39,26 @@ a:visited {
 }
 a:hover {
     text-decoration: none;
+    color: #067948;
+    font-weight: bold;
 }
 a:active {
     text-decoration: none;
 }
 
 #about-me-container {
-  background-color: #637778;
+  background-color: #155E96;
+}
+
+.centered-header {
+  text-align: center;
+  color: white;
 }
 
 #projects-container {
-  background-color: #ABB1B2;
-  padding-left: 5em;
-  padding-right: 5em;
+  background-color: #7DACD0;
+  padding-left: 7%;
+  padding-right: 7%;
 }
 
 #projects-container>.row {
@@ -50,7 +66,7 @@ a:active {
 }
 
 #project-container {
-    background-color: #637778;
+    background-color: #7DACD0;
     color: white;
 }
 
@@ -93,6 +109,7 @@ a:active {
 
 .project-description {
   font-size: 2em;
+  padding: 1em;
 }
 
 .project-header {
