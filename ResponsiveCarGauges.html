@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jared Failor Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="css/landingStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-full row" id="page-header">
+      <div class="col-xs-12 col-md-4">
+        <a href="index.html">
+          Jared Failor
+        </a>
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <span class="contact-info">
+          <i class="fa fa-envelope" aria-hidden="true"></i> jfailor2@gmail.com
+        </span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="contact-info">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+          <a href="https://www.linkedin.com/in/jared-failor/">
+            https://www.linkedin.com/in/jared-failor/
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="container-full" id="project-container">
+      <div class="row">
+        <div class="col-xs-12 project-header"><h1>Responsive Car Gauges</h1></div>
+        <div class="col-xs-12 project-header"><h3>C++ • Arduino</h3></div>
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 project-description">
+          <br>
+          The Responsive Car Gauges project reads engine statistics over the OBD2 port, then adjusts gauge backlighting color accordingly on an individual basis. For example, as you rev the engine, the rpm gauge would go from blue to red.
+          <br><br>
+          <img class="content-image-horiz center-block" src="img/CarGaugesFull.jpg">
+          <br>
+          The first step required for this project was replacing the lights behind my gauges with multicolored LEDs that I could control. For this I opted for individual WS2812B LEDs (otherwise known as neopixels). In each light socket there was only room for two LEDs back to back on a prototype board.
+          <br><br>
+          <img class="content-image-vert center-block" src="img/LEDAssembly.jpg">
+          <br>
+          The LEDs left some brightness to be desired around dusk and dawn, but worked well in complete darkness. To change which engine value a gauge is synchronized with, an lcd display was mounted in my car's ash tray with some buttons below it. RPM, speed, engine load, engine temp, and throttle percent were the supported data points in addition to some basic solid color options.
+          <br><br>
+          <img class="content-image-horiz center-block" src="img/CarDisplay.jpg">
+          <br>
+          Communication with the car was done over the standard OBD2 port. I tried a variety of adapters including one from Sparkfun and using an HC-05 chip to pair with my existing bluetooth diagnostic tool. In the end, the wired Sparkfun adapater proved to be the most reliable. The car took around 0.1s to respond to requests so I utilized interpolation to smooth out changes, but the delay in changes was still fairly noticeable.
+          <br><br><br>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
