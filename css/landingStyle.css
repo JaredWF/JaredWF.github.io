@@ -13,9 +13,13 @@ body {
 }
 
 .contact-info {
-  color: #4DBC8C;
+  color: #F67643;
   padding-top: 1em;
   white-space: nowrap;
+}
+
+.fa {
+  color: #7DACD0;
 }
 
 .name {
@@ -29,7 +33,7 @@ body {
 }
 
 .contact-info>a {
-  color: #2EA974;
+  color: #F67643;
 }
 a:link {
     text-decoration: none;
