@@ -33,18 +33,12 @@
     </div>
     <div class="container-full" id="project-container">
       <div class="row">
-        <div class="col-xs-12 project-header"><h1>Crowd DJ</h1></div>
-        <div class="col-xs-12 project-header"><h3>Scala • PHP • HTML • CSS • Javascript</h3></div>
+        <div class="col-xs-12 project-header"><h1>Weather Cube</h1></div>
+        <div class="col-xs-12 project-header"><h3>C • Python</h3></div>
         <div class="col-xl-6 col-xl-offset-3 col-md-8 col-md-offset-2 project-description">
-          This project uses Spotify's API to have one user to login and allow many people to see and contribute to a playlist regardless of whether they have a Spotify accont or not. The motivation behind this was many people at social events want to add a song they want to hear to the queue but it's a hassle to crowd around the host's phone or computer. This being considered, creating a mobile friendly web interface was a priority. The end result is below.
+          As the final project for my embedded systems class, I built a 4x4x4 RGB LED cube that would play animations according to current weather conditions. This provided great practice at using internal timers on the NXP microcontroller since the cube rendered using a scanning method and persistance of vision. The microcontroller would periodically poll the serial port to request new conditions from the Python script. Once built, the cube was first tested using an Arduino before switching to the NXP controller since the Arduino has many more convenience methods.
           <br><br>
-          <img class="content-image-vert center-block" src="img/CrowdDJ.png">
-          <br><br>
-          The program was actually put to test before our pre concert brunch on slope day. While it saved me the hassle of putting together a playlist, the music selection was all over the place. Constantly jumping between genres doesn't sound as good as sticking to one. The combination of my friends' music tastes can be seen below.
-          <br><br>
-          <img class="content-image-horiz center-block" src="img/SlopeDayPlaylist.png">
-          <br><br>
-          Spotfy's API is pretty limited so showing where in the playlist you are couldn't be acheived. If I had to go back and redo this project, I would use some other server side rendering framework like Python with Django instead of PHP.  Ultimately, the project provided an interesting social experiment but wasn't as useful as I had hoped.
+          <img class="content-image-horiz center-block" src="img/WeatherCubeLit.png">
           <br><br><br>
         </div>
       </div>
