@@ -1,6 +1,7 @@
 body {
   font-family: 'Encode Sans Semi Condensed', sans-serif;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .container-full {
