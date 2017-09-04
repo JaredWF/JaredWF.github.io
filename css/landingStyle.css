@@ -62,7 +62,8 @@ a:active {
 }
 
 #projects-container {
-  background-color: #7DACD0;
+  /*background-color: #7DACD0;*/
+  background-color: #555;
   padding-left: 7%;
   padding-right: 7%;
 }
