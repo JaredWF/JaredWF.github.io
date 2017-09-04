@@ -30,7 +30,7 @@
   }
 
   .contact-info {
-    padding-top: 1em;
+    padding-top: 1.25em;
   }
 }
 
@@ -62,7 +62,6 @@ body {
 .lowered {
   line-height: 4em;
   padding-top: 2em;
-  font-size: 1.25em;
 }
 
 .contact-info>a {
