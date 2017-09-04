@@ -11,8 +11,8 @@
     font-size: 7em;
   }
 
-  .contact-info {
-    padding-top: 3em;
+  .lowered {
+    font-size: 3em;
   }
 }
 
@@ -29,8 +29,8 @@
     font-size: 4em;
   }
 
-  .contact-info {
-    padding-top: 1.25em;
+  .lowered {
+    font-size: 1.5em;
   }
 }
 
@@ -60,8 +60,8 @@ body {
 }
 
 .lowered {
-  line-height: 4em;
-  padding-top: 2em;
+  line-height: 2em;
+  padding-top: 1.5em;
 }
 
 .contact-info>a {
